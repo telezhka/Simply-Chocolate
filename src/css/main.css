@@ -4,7 +4,7 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
+@import url('./base/reset.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
