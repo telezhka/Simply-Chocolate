@@ -1,18 +1,9 @@
 :root {
   --primary-background-color: #e2e2e2;
   --second-background-color: #1e1823;
-<<<<<<< Updated upstream
   --orange-brand-color: #fd9222;
   --primary-text-color: #111111;
   --second-text-color: #ffffff;
   --placeholder-text-color: #404040;
-=======
-  --orange-background-color: #fd9222;
-  --primary-text-color: #111111;
-  --second-text-color: #ffffff;
-  --orange-text-color: #fd9222;
-  --placeholder-text-color: #404040;
-  --primary-button-color: #fd9222;
->>>>>>> Stashed changes
   --hover-button-color: #fcf1e0;
 }
