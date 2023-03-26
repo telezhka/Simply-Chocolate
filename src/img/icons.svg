@@ -31,7 +31,7 @@
             <path fill="none" stroke="#fafafa" style="stroke: var(--color4, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7273" d="M2.909 5.455h26.182c1.406 0 2.545 1.14 2.545 2.545v16c0 1.406-1.14 2.545-2.545 2.545h-26.182c-1.406 0-2.545-1.14-2.545-2.545v-16c0-1.406 1.14-2.545 2.545-2.545z"></path>
         </symbol>
         <symbol id="icon-menu-burger" viewBox="0 0 32 32">
-            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.5" d="M4 16h24M4 8h24M4 24h24"></path>
+            <path   stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.5" d="M4 16h24M4 8h24M4 24h24"></path>
         </symbol>
         <symbol id="icon-modal-close-cross" viewBox="0 0 32 32">
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M24 8l-16 16"></path>
