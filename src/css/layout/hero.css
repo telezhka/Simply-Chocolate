@@ -1,0 +1,90 @@
+.hero-container{
+    padding: 395px 16px 32px 20px;
+}
+/* .container{
+    max-width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid tomato;
+   
+} */
+
+.hero{
+border-radius: 30px;
+max-width: 335px;
+background-color: black;
+background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),url(../../img/hero.jpg);
+background-repeat: no-repeat;
+background-position: 75% 0%;
+background-size: cover;
+margin-left: auto;
+margin-right: auto
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+   .hero{
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../img/hero@2x.jpg);
+   } 
+}
+.hero-tagline{
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+.hero-text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+
+}
+.hero-button{
+    margin: 0 0 32px 0;
+}
+.hero-modal-button{
+    margin: 0 14px 0 0;
+}
+
+.down-ikon{
+    fill: var(--orange-brand-color);
+    width: 16px;
+    height: 16px;
+    background-color: var(--second-text-color);
+    border-radius: 50%;
+    border: 0;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.down-button{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content:center;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    border: 0;
+    color: var(--second-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.down-button:hover, .down-button:focus{
+    color: var(--orange-brand-color);
+}
+.down-button:focus > .down-ikon{
+    fill: var(--second-text-color);
+    background-color: var(--orange-brand-color);
+}
+.down-button:hover > .down-ikon{
+    
+    fill: var(--second-text-color);
+    background-color: var(--orange-brand-color);
+}
