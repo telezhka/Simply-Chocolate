@@ -81,7 +81,7 @@
   background-color: transparent;
   border-radius: 100px;
   border: 1px solid var(--second-text-color);
-  padding: 14px 40px;
+  padding: 12px 28px;
 }
 
 .inverted-button-black:hover,
