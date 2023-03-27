@@ -1,0 +1,334 @@
+.subscribe {
+  padding: 62px 20px;
+  max-width: 100%;
+
+  background-image: url(../../img/subcribe-mob.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.container-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-header {
+  margin-bottom: 24px;
+  max-width: 290px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+}
+
+.subscribe-text {
+  margin-bottom: 24px;
+  max-width: 326px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--second-text-color);
+}
+
+.subscribe-btn {
+  padding: 12px 28px;
+  background-color: var(--orange-brand-color);
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--second-text-color);
+  border-radius: 100px;
+  margin: 0 auto;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--hover-button-color);
+  color: var(--orange-brand-color);
+}
+
+/* Стили для подложки */
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+.modal {
+  display: none;
+}
+.modal.is-shown {
+  display: block;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url(../../img/subcribe-mob2x.jpg);
+  }
+}
+
+/*------------------------------Modal Subscribe-------------------------------------*/
+
+.subscribe-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  max-width: 311px;
+  height: 95%;
+  max-height: 350px;
+  overflow: hidden;
+  z-index: 50;
+  background-color: var(--second-text-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn-close {
+  position: absolute;
+  stroke: var(--second-text-color);
+  display: flex;
+  top: 15px;
+  right: 14px;
+  padding: 0;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn-close:hover,
+.subscribe-btn-close:focus {
+  stroke: var(--orange-brand-color);
+}
+
+.subscribe-btn-close-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.subscribe-modal-picture {
+  width: 311px;
+  height: 169px;
+  /* z-index: 1; */
+  background-image: url(../../img/explore-modal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .subscribe-modal-picture {
+    background-image: url(../../img/explore-modal@2x.jpg);
+  }
+}
+
+.subscribe-form {
+  padding: 32px 24px;
+}
+
+.subscribe-form-title {
+  margin-bottom: 24px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.subscribe-orange-txt {
+  color: var(--orange-brand-color);
+}
+
+.subscribe-email {
+  width: 263px;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: -0.02em;
+
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.email-window {
+  position: relative;
+}
+
+.subscribe-submit-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  /* margin: 0; */
+  padding: 14px 28px;
+  background: var(--orange-brand-color);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--second-text-color);
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-submit-btn:hover,
+.subscribe-submit-btn:focus {
+  background-color: var(--hover-button-color);
+  color: var(--orange-brand-color);
+}
+
+/* ----------------------------- TABLET ------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    padding: 72px 150px;
+    max-width: 100%;
+    background-image: url(../../img/subcribe-tab.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .subscribe {
+      max-width: 100%;
+      background-image: url(../../img/Subcribe-tab2x.jpg);
+    }
+  }
+
+  .subscribe-header {
+    width: 378px;
+    font-size: 24px;
+    line-height: 1.166;
+  }
+
+  .subscribe-text {
+    max-width: 467px;
+  }
+
+  .subscribe-btn {
+    padding: 14px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .subscribe-modal {
+    max-width: 538px;
+    max-height: 412px;
+  }
+
+  .subscribe-btn-close {
+    top: 24px;
+    right: 24px;
+  }
+
+  .subscribe-btn-close-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .subscribe-modal-picture {
+    width: 538px;
+    height: 196px;
+    background-image: url(../../img/explore-modal.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .subscribe-modal-picture {
+      background-image: url(/img/explore-modal@2x.jpg);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+
+  .subscribe-form {
+    max-height: 216px;
+    padding: 40px;
+  }
+
+  .subscribe-form-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.1667;
+    margin-bottom: 28px;
+  }
+
+  .subscribe-email {
+    width: 313px;
+    padding: 14px 24px;
+    font-size: 18px;
+    line-height: 1.222;
+  }
+
+  .subscribe-submit-btn {
+    padding: 16px 42px;
+  }
+}
+
+/* --------------------- DESKTOP ------------------------------- */
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    padding: 72px 370px;
+    max-width: 100%;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../../img/subcribe.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .subscribe {
+      max-width: 100%;
+
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(../../img/subcribe@2x.jpg);
+    }
+  }
+}
