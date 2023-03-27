@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container_mobile">
+  <div class="container container_mobile">
     <div class="mobile_menu">
       <nav>
         <div class="mobile_header">
@@ -17,30 +17,40 @@
             type="button"
             class="button-close js-close-menu button-close-menu"
           >
-            <svg class="button-close-svg" width="28" height="28px">
+            <svg class="button-close-svg">
               <use href="./img/icons.svg#icon-modal-close-cross"></use>
             </svg>
           </button>
           <ul class="nav_link">
-            <li class="link_menu"><a href="">Home</a></li>
-            <li class="link_menu"><a href="">How it’s made?</a></li>
-            <li class="link_menu"><a href=""></a>Our products</li>
-            <li class="link_menu"><a href=""></a>Top sellers</li>
-            <li class="link_menu"><a href=""></a>Chocolate is loved</li>
+            <li class="link_menu">
+              <a class="link_menu_nav" href="./index.html">Home</a>
+            </li>
+            <li class="link_menu">
+              <a class="link_menu_nav" href="#advantages">How it’s made?</a>
+            </li>
+            <li class="link_menu">
+              <a class="link_menu_nav" href="#our-product">Our products</a>
+            </li>
+            <li class="link_menu">
+              <a class="link_menu_nav" href="#top-sellers">Top sellers</a>
+            </li>
+            <li class="link_menu">
+              <a class="link_menu_nav" href="Reviews">Chocolate is loved</a>
+            </li>
           </ul>
         </div>
         <div class="social_link_container">
           <ul class="list_social_link">
             <li class="social_link">
               <a href="">
-                <svg width="24" height="24" class="header_icon_instagram">
+                <svg class="header_icon_instagram">
                   <use href="./img/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social_link">
               <a href="">
-                <svg width="24" height="24" class="">
+                <svg class="header_icon_instagram">
                   <use href="./img/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -49,7 +59,7 @@
         </div>
       </div>
       <button type="button" class="menu_button js-open-menu">
-        <svg width="21" height="21">
+        <svg width="21" height="21" class="icon_button_open_menu">
           <use href="./img/icons.svg#icon-menu-burger"></use>
         </svg>
       </button>
