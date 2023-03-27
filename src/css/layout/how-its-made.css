@@ -150,8 +150,8 @@
 
 .made-item::before {
     content: "";
-    background-color: #4C4C4C;
-    border: 1px solid #ECEDED;
+    background-color: var(--primary-marker-color);
+    border: 1px solid var(--second-marker-color);
     width: 8px;
     height: 8px;
     position: absolute;
