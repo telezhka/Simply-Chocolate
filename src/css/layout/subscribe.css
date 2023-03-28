@@ -2,7 +2,7 @@
   padding: 62px 20px;
   max-width: 100%;
 
-  background-image: url(../../img/subcribe-mob.jpg);
+  background-image: url(../../img/subscribe-mob.jpg);
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .subscribe {
-    background-image: url(../../img/subcribe-mob2x.jpg);
+    background-image: url(../../img/subscribe-mob@2x.jpg);
   }
 }
 .subscribe-modal {
@@ -220,7 +220,7 @@
   .subscribe {
     padding: 72px 150px;
     max-width: 100%;
-    background-image: url(../../img/subcribe-tab.jpg);
+    background-image: url(../../img/subscribe-tab.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -228,7 +228,7 @@
     screen and (min-resolution: 2dppx) {
     .subscribe {
       max-width: 100%;
-      background-image: url(../../img/Subcribe-tab2x.jpg);
+      background-image: url(../../img/subscribe-tab@2x.jpg);
     }
   }
 
@@ -308,7 +308,7 @@
 @media screen and (min-width: 1200px) {
   .subscribe {
     padding: 72px 370px;
-    max-width: 100%;
+    max-width: 1200;
 
     background-image: linear-gradient(
         0deg,
