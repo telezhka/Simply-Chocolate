@@ -11,6 +11,119 @@
     background: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
+
+.modal-thanks {
+    position: relative;
+        background-color: var(--orange-brand-color);
+        border-radius: 15px;
+        
+        width: 516px;
+        height: 414px;
+        
+        margin-right: auto;
+        margin-left: auto;
+        transform: scale(1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-thanks-discription {
+    padding-left: 163px;
+    padding-right: 44px;
+    padding-top: 154px;
+    padding-bottom: 154px;
+}
+
+.modal-thanks-title {
+    text-align: left;
+    
+    margin-bottom: 8px;
+    font-weight: 600;
+        font-size: 24px;
+        line-height: 1.17;
+        /* identical to box height, or 117% */
+    color: var(--hover-button-color);
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+
+}
+
+.modal-thanks-text {
+    font-weight: 400;
+        font-size: 18px;
+        line-height: 1.33;
+        /* or 133% */
+    color: var(--hover-button-color);
+        letter-spacing: -0.02em;
+}
+
+.modal-thanks-img {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 15px;
+    
+}
+
+.modal-thanks-close {
+    stroke: #F16529;
+        width: 22px;
+        height: 22px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .modal-thanks {
+        width: 311px;
+        height: 350px;
+    }
+
+    .modal-thanks-discription {
+        padding-left: 68px;
+            padding-right: 24px;
+            padding-top: 84px;
+            padding-bottom: 170px;
+    }
+
+    .modal-thanks-img {
+        display: none;
+    }
+
+    .modal-thanks-title {
+        font-size: 20px;
+    }
+
+        .modal-thanks-text {
+            font-size: 14px;
+        }
+    
+.modal-thanks-img-rotate {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 15px;
+}
+
+  
+}
+
+@media screen and (min-width: 768px) {
+    .modal-thanks-img-rotate {
+        display: none;
+    }
+}
+
+.close-thanks-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--hover-button-color);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 .close-hero-modal{
     position: absolute;
     top: 20px;
@@ -227,4 +340,74 @@ background-color: var(--primary-background-color);
         width: 28px;
         height: 28px;
     }
+}
+
+
+.overlay {
+
+
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+
+/* Стили для модальных окон */
+
+.modal {
+
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+
+
+    /*  Установаем ширину окна  */
+    /* width: 100%;
+    max-width: 500px; */
+
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    /* Должен быть выше чем у подложки*/
+
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+
+    /* padding: 30px; */
+    border-radius: 15px;
+    /* background-color: #fff; */
+    transition: 0.3s all;
+}
+
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
 }

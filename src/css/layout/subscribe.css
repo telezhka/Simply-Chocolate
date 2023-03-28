@@ -67,14 +67,17 @@
   z-index: 20;
   transition: 0.3s all;
 }
+
 .active {
   opacity: 1;
   visibility: visible;
 }
 
+
 .modal.is-shown {
   display: block;
 }
+
 .modal.is-hidden {
   display: none;
 }
@@ -83,6 +86,7 @@
   height: 24px;
   z-index: 20;
 }
+
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
