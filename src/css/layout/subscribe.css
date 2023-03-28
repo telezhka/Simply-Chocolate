@@ -74,12 +74,16 @@
   z-index: 20;
   transition: 0.3s all;
 }
-.modal {
+
+/* .modal {
   display: none;
-}
+} */
+
 .modal.is-shown {
   display: block;
 }
+
+
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {

@@ -107,3 +107,242 @@ justify-content: space-between;
 .top-sellers-title-desktop {
     margin-bottom: 50px;
 }
+
+
+
+
+
+
+/* Modal Buy Now */
+
+/* .hero-modal-title {
+    padding: 32px 0 32px 0;
+}
+
+.orange-hero {
+    color: var(--orange-brand-color);
+}
+
+.chocolate-card {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 231px;
+    border-radius: 15px;
+    background-color: var(--second-text-color);
+
+}
+
+.chocolate-card.white-no {
+    display: none;
+}
+
+.chocolate-photo {
+    display: block;
+    text-align: center;
+    padding: 32px 32px 16px 32px;
+    width: 167px;
+    height: 148px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chocolate-gramm {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background-color: var(--primary-background-color);
+    border-radius: 100px;
+    padding: 8px 29px 8px 29px;
+    width: 96px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+}
+
+.trait-dot {
+    text-align: center;
+    margin: 14px 0 0 0;
+}
+
+.trait-orange {
+    display: inline-block;
+    width: 28px;
+    height: 13px;
+    background-color: var(--orange-brand-color);
+    border-radius: 50px;
+}
+
+.dot-orange {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--orange-brand-color);
+    border-radius: 50px;
+}
+
+.hero-form {
+    padding: 32px 24px 32px 24px;
+
+}
+
+.hero-line-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-hero {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin: 0 0 8px 0;
+}
+
+.name-input {
+    margin: 0 0 6px 0;
+}
+
+.hero-input {
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+    margin: 0 0 18px 0;
+    background-color: var(--primary-background-color);
+}
+
+.hero-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+    padding: 14px 18px 14px 18px;
+}
+
+.hero-input.input-tel::placeholder {
+    padding: 14px 18px 14px 90px;
+}
+
+.hero-input.input-tel {
+    position: relative;
+}
+
+.modal-svg-hero {
+    position: absolute;
+    left: 34px;
+    transform: translateY(200%);
+    width: 24px;
+    height: 18px;
+}
+
+.hero-input-tel {
+    position: absolute;
+    left: 30px;
+    transform: translateY(125%);
+    border-right: 1px solid rgba(64, 64, 64, 0.3);
+    padding: 4px 8px 4px 32px;
+}
+
+.hero-input.mastercard {
+    position: relative;
+}
+
+.mastercard-hero {
+    position: absolute;
+    transform: translateY(165%);
+    right: 30px;
+    width: 32px;
+    height: 21px;
+}
+
+.hero-textarea {
+    height: 91px;
+}
+
+@media screen and (min-width: 768px) {
+    .chocolate-card.white-no {
+        display: block;
+    }
+
+    .list-chocolate-card {
+        display: flex;
+        gap: 16px;
+
+    }
+
+    .hero-modal {
+        max-width: 609px;
+    }
+
+    .trait-dot {
+        display: none;
+    }
+
+    .name-surname {
+        display: flex;
+        gap: 21px;
+    }
+
+    .chocolate-photo {
+        padding: 24px 20px 14px 20px;
+
+    }
+
+    .chocolate-gramm {
+        margin-bottom: 18px;
+    }
+
+    .chocolate-card {
+        max-width: 160px;
+        flex-basis: calc((100% - 32px) / 3)
+    }
+
+    .modal-svg-hero {
+        width: 32px;
+        height: 24px;
+        left: 34px;
+        transform: translateY(140%);
+    }
+
+    .hero-input-tel {
+        left: 35px;
+    }
+
+    .mastercard-hero {
+        position: absolute;
+        transform: translateY(100%);
+        right: 30px;
+        width: 44px;
+        height: 30px;
+    }
+
+    .label-hero {
+        font-size: 14px;
+        line-height: 1.28;
+    }
+
+    .hero-input::placeholder {
+        font-size: 18px;
+        line-height: 1.22;
+        padding: 22px 24px 22px 24px;
+    }
+
+    .hero-input.input-tel::placeholder {
+        padding: 22px 24px 22px 90px;
+    }
+
+    .hero-textarea {
+        height: 137px;
+    }
+
+    .hero-modal-close {
+        width: 28px;
+        height: 28px;
+    }
+} */
