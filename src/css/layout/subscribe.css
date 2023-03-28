@@ -308,7 +308,7 @@
 @media screen and (min-width: 1200px) {
   .subscribe {
     padding: 72px 370px;
-    max-width: 1200;
+    max-width: 100%;
 
     background-image: linear-gradient(
         0deg,
