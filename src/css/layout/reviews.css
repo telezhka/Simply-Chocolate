@@ -1,0 +1,557 @@
+.reviews-container {
+  margin: auto;
+}
+
+.swiper-wrapper {
+  position: relative;
+  margin: auto;
+}
+
+.header-reviews {
+  margin-bottom: 74px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--orange-brand-color);
+}
+.hedspan {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #111111;
+  text-transform: uppercase;
+}
+.image-wrapper {
+  margin-bottom: 24px;
+  width: 100%;
+}
+.reviews-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #111111;
+}
+.reviews-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.swiper-slide {
+  position: relative;
+  width: 100%;
+  max-width: 335px;
+  text-align: center;
+  padding: 56px 18px 42px 18px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+  margin-bottom: 65px;
+}
+.reviews-photo {
+  display: block;
+  position: absolute;
+  top: -50px;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* модальне вікно */
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+.modal-stule {
+  max-width: 311px;
+}
+.reviews-modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 311px;
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 29; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  border-radius: 15px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__cross-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: #fcf1e0;
+}
+.modal__cross:hover,
+.modal__cross:focus {
+  background: #fcf1e0;
+}
+.btn-style {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+  stroke: #1e1823;
+}
+.vector {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+  stroke: var(--orange-brand-color);
+}
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+
+.reviews-form {
+  border-radius: 15px;
+  padding: 32px 24px;
+}
+
+.button-styles {
+  width: 222px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 14px 40px;
+  color: #111111;
+  border-radius: 100px;
+  border-color: var(--orange-brand-color);
+}
+.button-styles:hover,
+.button-styles:focus {
+  background-color: var(--orange-brand-color);
+  color: #ffffff;
+}
+.form-windows {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.ul-form {
+  margin-bottom: 16px;
+}
+/* Стилі для форми */
+
+/* . {
+      text-align: left;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    } */
+.reviews-cpan-hed {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--orange-brand-color);
+}
+.button-send {
+  display: block;
+  width: 93px;
+  padding: 12px 28px;
+  border-radius: 100px;
+  border: 1px solid var(--orange-brand-color);
+  background-color: var(--orange-brand-color);
+}
+.btn-rew {
+  border: none;
+  background-color: transparent;
+}
+.button-styles {
+  width: 165px;
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 12px 28px;
+  color: #111111;
+  border: 1px solid var(--orange-brand-color);
+  border-radius: 100px;
+  margin: auto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #111111;
+}
+.subscribe-form {
+  z-index: 100;
+}
+
+.reviews-li-form {
+  width: 100%;
+
+  border-radius: 8px;
+  margin-bottom: 14px;
+  outline: none;
+}
+
+.li-forms {
+  text-align: left;
+  display: flex;
+  margin-bottom: 8px;
+  flex-direction: column;
+  width: 360px;
+  margin-bottom: 14px;
+}
+.form-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+.form-input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+.reviews-input-li {
+  margin-bottom: 14px;
+
+  position: relative;
+  width: 100%;
+}
+.rew-padding {
+  padding: 14px 0px 14px 106px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: -0.02em;
+
+  color: rgba(17, 17, 17, 0.7);
+}
+.rew-padding::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+.reviews-form-heder {
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.reviews-input {
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  letter-spacing: -0.02em;
+
+  color: rgba(17, 17, 17, 0.7);
+}
+.reviews-input::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+.in-padding {
+  padding-left: 50px;
+}
+.reviews-svg {
+  position: absolute;
+  top: 14px;
+  left: 17px;
+  width: 31px;
+  height: 23px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-comments textarea {
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  height: 120px;
+  outline: none;
+  width: 100%;
+}
+.text-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+
+  color: rgba(17, 17, 17, 0.7);
+}
+.form-textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.reviews-modal-two {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 15px;
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 24px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+/* style popap*/
+.reviews-swg {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  width: 211px;
+  height: 200px;
+  background: url(ezgif-1-2d3a67b880.png);
+  transform: rotate(0deg);
+  border-radius: 15px;
+}
+
+.popap-heder {
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #fcf1e0;
+}
+
+.popap-text {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+.reviews-backround {
+  position: relative;
+  padding: 84px 24px 0px 58px;
+  max-width: 311px;
+  height: 350px;
+  border-radius: 15px;
+  background-color: var(--orange-brand-color);
+}
+
+/*  Планшет */
+@media screen and (min-width: 768px) {
+  .header-reviews {
+    margin-bottom: 91px;
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 768px;
+    margin: auto;
+    margin-bottom: 90px;
+  }
+
+  .image-wrapper {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .swiper-slide {
+    display: flex;
+    width: 100%;
+    max-width: 344px;
+    text-align: center;
+    padding: 56px 16px 42px 16px;
+    background: #ffffff;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+    border-radius: 15px;
+    margin-bottom: 65px;
+  }
+  .swiper-slide:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
+
+  .reviews-form {
+    border-radius: 15px;
+    padding: 40px;
+  }
+  .button-send {
+    display: block;
+    width: 117px;
+    padding: 14px 40px;
+  }
+  .modal-stule {
+    width: 100%;
+    max-width: 517px;
+  }
+  .rew-forv-two {
+    max-width: 516px;
+    height: 414px;
+
+    background-color: var(--orange-brand-color);
+  }
+  .reviews-backround {
+    position: relative;
+    padding: 163px 49px 163px 170px;
+
+    max-width: 516px;
+    height: 414px;
+    border-radius: 15px;
+    background-color: var(--orange-brand-color);
+  }
+  .popap-heder {
+    font-size: 24px;
+    line-height: 28px;
+    white-space: pre-line;
+  }
+  br {
+    display: none;
+  }
+  .popap-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .reviews-swg {
+    position: absolute;
+    width: 282px;
+    height: 347px;
+    left: -2px;
+    top: 67px;
+    background: url(ezgif-1-2d3a67b880.png);
+    transform: rotate(0deg);
+  }
+}
+.label-rew {
+  display: none;
+}
+.rew-input-tel {
+  position: absolute;
+  top: 14px;
+  left: 56px;
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-slide {
+    max-width: 1200px;
+
+    gap: 28px;
+    flex-basis: calc((100% - 56px) / 3);
+  }
+  .swiper-slide:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+  .swiper-wrapper {
+    max-width: 1200px;
+  }
+  .reviews-container {
+    padding-bottom: 128px;
+  }
+}

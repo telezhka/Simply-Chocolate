@@ -1,4 +1,5 @@
 <section class="section" id="top-sellers">
+
     <div class="container top-sellers-mobile">
         <h2 class="section-title top-sellers-title">
             <span class="top-sellers-title-inverted">Top</span> sellers
@@ -79,3 +80,139 @@
         <p class="modal__title">Заголовок окна 1</p>
     </div>
 </section>
+=======
+  <div class="container top-sellers-mobile">
+    <h2 class="section-title top-sellers-title">
+      <span class="top-sellers-title-inverted">Top</span> sellers
+    </h2>
+
+    <div class="top-sellers-mobile-first-img">
+      <picture>
+        <source
+          srcset="./img/top2.jpg 1x, ./img/top2@2x.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          class="top-sellers-img"
+          src="./img/top2.jpg"
+          alt="choco-nuts"
+          class=""
+          width="335"
+          height="464"
+        />
+      </picture>
+      <p class="top-sellers-discription-text-mobile">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+    </div>
+    <div class="top-sellers-second-img">
+      <picture>
+        <source
+          srcset="./img/top1.jpg 1x, ./img/top1@2x.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          class="top-sellers-img"
+          src="./img/top1.jpg"
+          alt="choco-nuts-plate"
+          class=""
+          width="335"
+          height="464"
+        />
+      </picture>
+      <button
+        class="primary-button top-sellers-btn js-open-modal"
+        data-modal="1"
+      >
+        Buy now
+      </button>
+    </div>
+  </div>
+
+  <div class="container top-sellers-desktop">
+    <h2 class="section-title top-sellers-title-desktop">
+      <span class="top-sellers-title-inverted">Top</span> sellers
+    </h2>
+    <div class="top-sellers-desktop-content">
+      <ul class="top-sellers-img-list">
+        <li>
+          <picture>
+            <source
+              srcset="./img/top2.jpg 1x, ./img/top2@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <img
+              src="./img/top2.jpg"
+              alt="choco-nuts"
+              class="top-sellers-img-desktop"
+              width="368px"
+              height="464px"
+            />
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source
+              srcset="./img/top1.jpg 1x, ./img/top1@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <img
+              src="./img/top1.jpg"
+              alt="choco-nuts-plate"
+              class="top-sellers-img-desktop"
+              width="368px"
+              height="464px"
+            />
+          </picture>
+        </li>
+        <li class="top-sellers-img-hidden">
+          <picture>
+            <source
+              srcset="./img/top3.jpg 1x, ./img/top3@2x.jpg 2x"
+              type="image/jpg"
+            />
+            <img
+              src="./img/top3.jpg"
+              alt="choco-nuts-plate"
+              class="top-sellers-img-desktop"
+              width="368px"
+              height="464px"
+            />
+          </picture>
+        </li>
+      </ul>
+      <div class="top-sellers-desktop-description">
+        <p class="top-sellers-discription-text">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+        <button
+          class="primary-button top-sellers-btn js-open-modal"
+          data-modal="1"
+        >
+          Buy now
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Несколько модальных окон -->
+
+  <div class="modal" data-modal="">
+    <!-- Svg иконка для закрытия окна  -->
+    <svg
+      class="modal__cross js-modal-close"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+      />
+    </svg>
+    <p class="modal__title">Заголовок окна 1</p>
+  </div>
+</section>
+

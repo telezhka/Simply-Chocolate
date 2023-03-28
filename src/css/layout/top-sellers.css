@@ -1,53 +1,49 @@
 .top-sellers-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .top-sellers-title-inverted {
-    color: var(--orange-brand-color);
+  color: var(--orange-brand-color);
 }
 
 .top-sellers-img {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .top-sellers-mobile-first-img {
-    display: flex;
-        flex-direction: column;
-    margin-bottom: 32px;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  gap: 20px;
+  align-items: center;
 }
 
 .top-sellers-second-img {
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .top-sellers-img-list {
-        display: flex;
-            gap: 20px;
-            margin-bottom: 20px;
-            justify-content: center;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
 }
-
-
 
 .top-sellers-desktop-description {
-display: flex;
-justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 .top-sellers-discription-text {
-    width: 407px;
+  width: 407px;
 }
 
 .top-sellers-discription-text-mobile {
-    width: 306px;
-    margin-right: auto;
+  width: 306px;
+  margin-right: auto;
 }
 
 
@@ -56,7 +52,7 @@ justify-content: space-between;
 
 
 .top-sellers-img-desktop {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .top-sellers-btn {
@@ -65,42 +61,36 @@ justify-content: space-between;
 }
 
 
-@media screen and (max-width:1200px)
-{
-    .top-sellers-img-hidden{
+@media screen and (max-width: 1200px) {
+  .top-sellers-img-hidden {
     display: none;
-    }
-    .top-sellers-desktop-content {
-        margin:0 auto;
-    }
-    .top-sellers-img-desktop {
-        width: 344px;
-        border-radius: 15px;
-    }
-    .top-sellers-desktop-content {
-        width: 707px;
-    }
+  }
+  .top-sellers-desktop-content {
+    margin: 0 auto;
+  }
+  .top-sellers-img-desktop {
+    width: 344px;
+    border-radius: 15px;
+  }
+  .top-sellers-desktop-content {
+    width: 707px;
+  }
 }
 
-
-
 @media screen and (min-width: 768px) {
-
-    .top-sellers-mobile {
-        display: none;
-    }
+  .top-sellers-mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
-
-.top-sellers-desktop { 
+  .top-sellers-desktop {
     display: none;
-
-    }
+  }
 }
 
 .top-sellers-title {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .top-sellers-title-desktop {

@@ -1,5 +1,5 @@
 <section class="subscribe">
-  <div class="container container-subscribe">
+  <div class="container-subscribe">
     <h2 class="subscribe-header">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
     <p class="subscribe-text">
       From the velvety texture to the rich and complex flavor, our New Chocolate
@@ -8,7 +8,7 @@
       work of art that is sure to please.
     </p>
     <button
-      class="open-modal-subscribe subscribe-btn js-open-modal"
+      class="open-modal-subscribe primary-button js-open-modal"
       type="button"
       data-modal="subscribe"
     >
@@ -18,14 +18,17 @@
 
   <!--------------- MODAL Subscribe ------------->
 
-  <div class="modal subscribe-modal" data-modal="subscribe">
-    <div class="subscribe-modal-picture">
-      <button class="subscribe-btn-close js-modal-close" data-modal-close>
-        <svg class="subscribe-btn-close-icon">
-          <use href="/img/icons.svg#icon-modal-close-cross"></use>
-        </svg>
-      </button>
-    </div>
+  <div
+    class="modal subscribe-modal js-modal"
+    id="modal-subscribe"
+    data-modal="subscribe"
+  >
+    <button class="subscribe-btn-close js-modal-close" data-modal="subscribe">
+      <svg class="subscribe-btn-close-icon">
+        <use href="/img/icons.svg#icon-modal-close-cross"></use>
+      </svg>
+    </button>
+    <div class="subscribe-modal-picture"></div>
     <div class="subscribe-form">
       <h2 class="subscribe-form-title">
         Explore our <br />
@@ -39,6 +42,7 @@
             type="email"
             name="subscribe-email"
             placeholder="Enter your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           />
         </label>
         <button class="subscribe-submit-btn js-modal-close" type="submit">
@@ -48,5 +52,5 @@
     </div>
   </div>
   <!-- </div> -->
-  <div class="overlay"></div>
+  <div class="overlay" id="overlay-modal"></div>
 </section>

@@ -37,7 +37,7 @@
 }
 
 .container-made-list {
-  max-width: 307px;
+  max-width: 335px;
   align-items: center;
   padding: 20px 14px;
   background-color: var(--second-text-color);
@@ -53,6 +53,7 @@
 
 @media screen and (min-width: 1200px) {
   .container-made-list {
+    padding: 32px 32px 34px 32px;
     max-width: 516px;
   }
 }
@@ -130,6 +131,14 @@
   font-size: 18px;
   margin-bottom: 20px;
   text-align: left;
+  width: 307px;
+}
+
+@media screen and (min-width: 768px) {
+    .made-text {
+        margin-bottom: 28px;
+        width: 350px;
+    }
 }
 
 .made-list {
