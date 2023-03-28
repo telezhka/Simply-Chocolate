@@ -1,8 +1,8 @@
 /* me class */
 .container_mobile {
   max-width: 375px;
-  margin: 20px auto 0 auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* mobile header */
@@ -55,6 +55,13 @@
   border: none;
   background-color: transparent;
 }
+.button-close-svg {
+  width: 28px;
+  height: 28px;
+}
+.button-close-svg:hover {
+  stroke: var(--orange-brand-color);
+}
 .nav_link {
   margin: 116px 0px 0px 30px;
 }
@@ -67,6 +74,7 @@
   letter-spacing: -0.02em;
   color: #ffffff;
 }
+
 .element_modal_menu {
   padding: 20px;
 }
@@ -77,11 +85,26 @@
   bottom: 20px;
   left: 20px;
 }
+.header_icon_instagram {
+  width: 22px;
+  height: 22px;
+}
 .social_link {
   stroke: #ffffff;
+  fill: transparent;
+}
+.social_link:hover {
+  stroke: #fd9222;
+}
+.social_link:focus {
+  stroke: #fd9222;
 }
 .social_link + .social_link {
   margin: 0px 0px 0px 18px;
+}
+.icon_button_open_menu {
+  width: 21px;
+  height: 21px;
 }
 @media screen and (max-width: 1199px) {
   .modal-menu.is-open {
@@ -100,6 +123,16 @@
   }
   .link_menu + .link_menu {
     margin-top: 24px;
+  }
+  .link_menu_nav:hover {
+    color: var(--orange-brand-color);
+    border-bottom: 1px solid #fd9222;
+    padding-bottom: 8px;
+  }
+  .link_menu_nav:focus {
+    color: var(--orange-brand-color);
+    border-bottom: 1px solid #fd9222;
+    padding-bottom: 8px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -121,10 +154,25 @@
   .nav_link {
     margin: 136px 0px 0px 55px;
   }
+  .header_icon_instagram {
+    width: 24px;
+    height: 24px;
+  }
+  .icon_button_open_menu {
+    width: 28px;
+    height: 28px;
+  }
+  .button-close-svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container_mobile {
     max-width: 1200px;
+  }
+  .button-close {
+    display: none;
   }
   .modal-menu {
     display: contents;
@@ -161,5 +209,12 @@
   }
   .social_link {
     stroke: #111111;
+    fill: transparent;
+  }
+  .link_menu_nav:hover {
+    color: var(--orange-brand-color);
+  }
+  .link_menu_nav:focus {
+    color: var(--orange-brand-color);
   }
 }
