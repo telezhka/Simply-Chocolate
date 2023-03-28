@@ -59,7 +59,7 @@
 
 .button-close {
   position: absolute;
-  top: 20px;
+  top: 40px;
   right: 20px;
   stroke: #ffffff;
   width: 28px;
@@ -179,7 +179,7 @@
     height: 100vh;
   }
   .button-close {
-    top: 24px;
+    top: 44px;
     right: 32px;
   }
   .list_social_link {
