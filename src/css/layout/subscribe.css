@@ -38,8 +38,8 @@
   color: var(--second-text-color);
 }
 
-.subscribe-btn {
-  padding: 12px 28px;
+.primary-button {
+  /* padding: 12px 28px;
   background-color: var(--orange-brand-color);
 
   font-weight: 600;
@@ -48,20 +48,13 @@
   color: var(--second-text-color);
   border-radius: 100px;
   margin: 0 auto;
-  border: none;
+  border: none;*/
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  background-color: var(--hover-button-color);
-  color: var(--orange-brand-color);
-}
-
-/* Стили для подложки */
+/*------------------------------Modal Subscribe-------------------------------------*/
 .overlay {
-  /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
 
@@ -75,14 +68,24 @@
   transition: 0.3s all;
 }
 
-/* .modal {
-  display: none;
-} */
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 .modal.is-shown {
   display: block;
 }
 
+.modal.is-hidden {
+  display: none;
+}
+.subscribe-btn-close-icon {
+  width: 24px;
+  height: 24px;
+  z-index: 20;
+}
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -91,11 +94,9 @@
     background-image: url(../../img/subcribe-mob2x.jpg);
   }
 }
-
-/*------------------------------Modal Subscribe-------------------------------------*/
-
 .subscribe-modal {
   position: fixed;
+  display: none;
   top: 50%;
   left: 50%;
   width: 95%;
@@ -245,7 +246,7 @@
     max-width: 467px;
   }
 
-  .subscribe-btn {
+  .primary-button {
     padding: 14px 40px;
     font-weight: 600;
     font-size: 18px;
