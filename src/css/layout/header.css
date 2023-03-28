@@ -40,9 +40,21 @@
   position: relative;
 }
 .modal-menu {
-  display: none;
+  position: absolute;
+  transform: translateX(200%);
+  transition: transform 250ms ease-in-out;
 }
 .modal-menu.is-open {
+  transform: translateX(0%);
+  position: fixed;
+  height: 220px;
+  width: 100vh;
+}
+.element_modal_menu {
+  display: none;
+}
+.modal-menu.is-open .element_modal_menu {
+  display: block;
 }
 
 .button-close {
@@ -58,6 +70,8 @@
 .button-close-svg {
   width: 28px;
   height: 28px;
+  stroke: #ffffff;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-close-svg:hover {
   stroke: var(--orange-brand-color);
@@ -73,6 +87,24 @@
   line-height: 1.142;
   letter-spacing: -0.02em;
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link_menu_nav {
+  color: #ffffff;
+  border-bottom: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link_menu_nav:hover {
+  color: var(--orange-brand-color);
+  border-bottom: 1px solid #fd9222;
+  padding-bottom: 8px;
+}
+.link_menu_nav:focus {
+  color: var(--orange-brand-color);
+  border-bottom: 1px solid #fd9222;
+  padding-bottom: 8px;
 }
 
 .element_modal_menu {
@@ -92,6 +124,7 @@
 .social_link {
   stroke: #ffffff;
   fill: transparent;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social_link:hover {
   stroke: #fd9222;
@@ -109,14 +142,15 @@
 @media screen and (max-width: 1199px) {
   .modal-menu.is-open {
     background-color: var(--second-background-color);
-    position: absolute;
+    position: fixed;
     top: -20px;
     right: 0;
     display: block;
     width: 220px;
-    height: 812px;
+    height: 100vh;
 
     z-index: 999;
+    transform: translateY(0%);
   }
   .list_social_link {
     position: absolute;
@@ -124,6 +158,7 @@
   .link_menu + .link_menu {
     margin-top: 24px;
   }
+
   .link_menu_nav:hover {
     color: var(--orange-brand-color);
     border-bottom: 1px solid #fd9222;
@@ -141,7 +176,7 @@
   }
   .modal-menu.is-open {
     width: 290px;
-    height: 1024px;
+    height: 100vh;
   }
   .button-close {
     top: 24px;
@@ -211,10 +246,16 @@
     stroke: #111111;
     fill: transparent;
   }
+  .link_menu_nav {
+    color: #111111;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   .link_menu_nav:hover {
     color: var(--orange-brand-color);
+    border-bottom: none;
   }
   .link_menu_nav:focus {
     color: var(--orange-brand-color);
+    border-bottom: none;
   }
 }
