@@ -76,9 +76,9 @@
 .button-close-svg:hover {
   stroke: var(--orange-brand-color);
 }
-.nav_link {
+/* .nav_link {
   margin: 116px 0px 0px 30px;
-}
+} */
 .link_menu {
   font-family: 'Montserrat';
   font-style: normal;
@@ -108,7 +108,7 @@
 }
 
 .element_modal_menu {
-  padding: 20px;
+  padding: 136px 0 0 50px;
 }
 
 .list_social_link {
@@ -186,8 +186,11 @@
     bottom: 24px;
     left: 32px;
   }
-  .nav_link {
+  /* .nav_link {
     margin: 136px 0px 0px 55px;
+  } */
+  .element_modal_menu {
+    padding: 156px 0 0 85px;
   }
   .header_icon_instagram {
     width: 24px;
