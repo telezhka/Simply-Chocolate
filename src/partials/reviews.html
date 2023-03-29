@@ -2,10 +2,10 @@
   <h2 class="header-reviews">
     chocolate <span class="hedspan"> is loved</span>
   </h2>
-  <div class="swiper image-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="image-wrapper">
+  <div class="swiperr image-sliderr">
+    <div class="swiper-wrapperr">
+      <div class="swiper-sliderr">
+        <div class="image-wrapperr">
           <img
             class="reviews-photo"
             srcset="./img/victoriab.png 1x, ./img/victoriab@2x.jpg 2x"
@@ -22,8 +22,8 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="image-wrapper">
+      <div class="swiper-sliderr">
+        <div class="image-wrapperr">
           <img
             class="reviews-photo"
             srcset="./img/nazarb.png 1x, ./img/nazarb@2x.jpg 2x"
@@ -41,8 +41,8 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="image-wrapper">
+      <div class="swiper-sliderr">
+        <div class="image-wrapperr">
           <img
             class="reviews-photo"
             srcset="./img/olenak.png 1x, ./img/olenak@2x.jpg 2x"
@@ -59,12 +59,12 @@
 
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </div>
-      <div class="swiper-slide display-none">
-        <div class="image-wrapper">
+      <div class="swiper-sliderr display-none">
+        <div class="image-wrapperr">
           <img
             class="reviews-photo"
-            srcset="./img/olenak.png 1x, ./img/olenak@2x.jpg 2x"
-            src="./img/olenak.png"
+            srcset="./img/natalias.png 1x, ./img/natalias@2x.jpg 2x"
+            src="./img/natalias.png"
             width="80px "
             height="80px"
           />
@@ -77,12 +77,12 @@
 
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </div>
-      <div class="swiper-slide display-none">
+      <div class="swiper-sliderr display-none">
         <div class="image-wrapper">
           <img
             class="reviews-photo"
-            srcset="./img/olenak.png 1x, ./img/olenak@2x.jpg 2x"
-            src="./img/olenak.png"
+            srcset="./img/danilon.png 1x, ./img/danilon@2x.jpg 2x"
+            src="../img/danilon.png"
             width="80px "
             height="80px"
           />
@@ -94,12 +94,12 @@
           </p>
         </div>
       </div>
-      <div class="swiper-slide display-none">
-        <div class="image-wrapper">
+      <div class="swiper-sliderr display-none">
+        <div class="image-wrapperr">
           <img
             class="reviews-photo"
-            srcset="./img/olenak.png 1x, ./img/olenak@2x.jpg 2x"
-            src="./img/olenak.png"
+            srcset="./img/irinat.png 1x, ./img/irinat@2x.jpg 2x"
+            src="./img/irinat.png"
             width="80px "
             height="80px"
           />
@@ -115,13 +115,13 @@
     <div class="swiper-pagination"></div>
   </div>
 
-  <button type="button" class="js-open-modal button-styles" data-modal="1">
+  <button type="button" class="js-open-modal button-styles" data-modal="9">
     Leave a review
   </button>
 
   <!-- Несколько модальных окон -->
 
-  <div class="reviews-modal modal modal-stule" data-modal="1">
+  <div class="reviews-modal modal modal-stule" data-modal="9">
     <form class="reviews-form" action="">
       <p class="reviews-form-heder">
         leave a review <br />
@@ -197,7 +197,7 @@
       <button
         type="button"
         class="button-send js-open-modal js-modal-close"
-        data-modal="2"
+        data-modal="10"
       >
         send
       </button>
@@ -205,7 +205,7 @@
 
     <!--   Svg иконка для закрытия окна  -->
   </div>
-  <div class="reviews-modal modal rew-forv-two" data-modal="2">
+  <div class="reviews-modal modal rew-forv-two" data-modal="10">
     <form class="reviews-backround" action="">
       <h2 class="popap-heder">
         THANK YOU <br />
@@ -215,12 +215,31 @@
         We are so happy to hear <br />
         from you
       </p>
-      <img
-        class="reviews-swg"
-        srcset="./img/half-choc.png 1x, ./img/half-choc.png 2x"
-        src="./img/half-choc.png"
-        alt=""
-      />
+      <picture>
+        <source
+          srcset="./img/half-choc.png 1x, ./img/half-choc@2x.png 2x"
+          type="image/png"
+        />
+        <img
+          class="modal-thanks-img"
+          src="./img/half-choc.png"
+          alt="half-choc-thanks"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ./img/half-choc-rotate.png    1x,
+            ./img/half-choc-rotate@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="modal-thanks-img-rotate"
+          src="./img/half-choc-rotate.png"
+          alt="half-choc-thanks-rotate"
+        />
+      </picture>
     </form>
     <button class="modal__cross-close js-modal-close">
       <svg class="vector">
