@@ -202,7 +202,7 @@
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: var(--orange-brand-color);
+    background-color:rgba(17, 17, 17, 0.1);;
     border-radius: 50px;
 }
 .hero-form{
@@ -345,7 +345,7 @@ background-color: var(--primary-background-color);
 
 .overlay {
 
-
+    overflow-y: hidden;
     opacity: 0;
     visibility: hidden;
 
@@ -357,6 +357,7 @@ background-color: var(--primary-background-color);
     background-color: rgba(0, 0, 0, .5);
     z-index: 20;
     transition: .3s all;
+    
 }
 
 
@@ -388,6 +389,8 @@ background-color: var(--primary-background-color);
     border-radius: 15px;
     /* background-color: #fff; */
     transition: 0.3s all;
+    
+    overflow: hidden;
 }
 
 
