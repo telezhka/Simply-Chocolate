@@ -47,8 +47,8 @@
 .modal-menu.is-open {
   transform: translateX(0%);
   position: fixed;
-  height: 220px;
-  width: 100vh;
+  height: 105%;
+  width: 220px;
 }
 .element_modal_menu {
   display: none;
@@ -147,7 +147,7 @@
     right: 0;
     display: block;
     width: 220px;
-    height: 100vh;
+    height: 105%;
 
     z-index: 999;
     transform: translateY(0%);
@@ -176,7 +176,7 @@
   }
   .modal-menu.is-open {
     width: 290px;
-    height: 100vh;
+    height: 105%;
   }
   .button-close {
     top: 44px;
