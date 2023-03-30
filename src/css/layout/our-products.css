@@ -1,108 +1,171 @@
-/* Products Section */
+/* Section */
+
+.our-products-wrap {
+  display: flex;
+  flex-direction: column;
+}
 
 @media screen and (max-width: 767px) {
-  .products-section {
+  .our-products-wrap {
     padding-bottom: 72px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .products-section {
+  .our-products-wrap {
     padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-products-wrap {
+    padding-bottom: 128px;
   }
 }
 
 /* Products Title */
 
-.products-title {
+.our-products-title {
+  align-self: center;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: -0.03em;
-  text-align: center;
-  color: var(--primary-text-color);
-  margin: 0 auto 32px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
-
-.products-title-second {
+.our-products-accent-text {
   color: var(--orange-brand-color);
 }
 
 /* Products Card */
 
-.swiper {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .swiper {
-    width: 270px;
-    height: 364px;
-  }
-}
-
-.products-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-
-  padding: 32px 52px;
-
+.our-products-card {
+  width: 335px;
+  min-height: 364px;
+  margin-bottom: 20px;
   background: var(--second-text-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
+  transition: transform 500ms;
 }
 
-.products-img {
+@media screen and (min-width: 768px) {
+  .our-products-card {
+    width: 270px;
+  }
+}
+
+.our-products-card:hover {
+  box-shadow: 0px 1px 6px rgba(2, 2, 7, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.our-products-card-content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 364px;
+  padding: 32px 20px;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .our-products-card-content-wrap {
+    padding: 32px 53px;
+  }
+}
+
+.our-products-card-link {
+  display: block;
+  width: 230px;
   margin-bottom: 8px;
 }
 
-.products-subtitle {
-  color: var(--primery-text-color);
+.our-product-img {
+  margin-bottom: 8px;
+}
 
-  text-align: center;
+.our-products-cards-name {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
+  margin-bottom: 2px;
   text-transform: uppercase;
 }
-
-.products-text {
+.our-products-cards-name:hover,
+.our-products-cards-name:focus {
+  color: var(--orange-brand-color);
+  text-decoration: underline;
+}
+.our-products-cards-description {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
   margin-bottom: 18px;
   color: rgba(17, 17, 17, 0.7);
-
-  text-align: center;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: -0.02em;
 }
-
-.products-button {
-  padding: 8px 20px;
-
-  background: #fafafa;
+.our-products-price-buy-now {
+  font-weight: 600;
+  line-height: 1.21;
+  background-color: var(--second-text-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
-
-  text-align: center;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  color: var(--primary-text-color);
+  width: 94px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.our-products-pagination-wrap {
+  align-self: center;
+  margin-top: 32px;
+  display: flex;
+  gap: 13px;
 }
 
-.image-slider .swiper-pagination-bullet {
+@media screen and (min-width: 1200px) {
+  .our-products-pagination-wrap {
+    display: none;
+  }
+
+  .our-products-cardc-wrap {
+    overflow: visible;
+  }
+
+  .our-products-card:hover {
+    transform: scale(1.009);
+  }
+}
+
+.products-swiper {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+/* Pagination */
+
+.review-swiper-pagination {
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
   width: 13px;
   height: 13px;
   background: rgba(17, 17, 17, 0.553);
 }
-.image-slider .swiper-pagination-bullet-active {
+
+.swiper-pagination-bullet-active {
   width: 28px;
   height: 13px;
-  border-radius: 32px;
-  background: #fd9222;
+  background-color: var(--orange-brand-color);
+  border-radius: 6px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 13px 0 0;
 }
