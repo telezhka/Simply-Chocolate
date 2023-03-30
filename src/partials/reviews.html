@@ -2,9 +2,9 @@
   <h2 class="header-reviews">
     chocolate <span class="hedspan"> is loved</span>
   </h2>
-  <div class="swiperr image-sliderr">
-    <div class="swiper-wrapperr">
-      <div class="swiper-sliderr">
+  <div class="swiperr swiper image-slider">
+    <div class="swiper-wrapperr swiper-wrapper">
+      <div class="swiper-sliderr swiper-slide">
         <div class="image-wrapperr">
           <img
             class="reviews-photo"
@@ -50,11 +50,14 @@
             width="80px "
             height="80px"
           />
-          <h2 class="reviews-name">Olena Kampusch</h2>
-          <p class="reviews-text">
-            Chocolate is a family favourite treat. Love the delicious smooth
-            chocolate and the creaminess inside. The wafer is soft but crunchy.
-          </p>
+          <div class="content">
+            <h2 class="reviews-name">Olena Kampusch</h2>
+            <p class="reviews-text">
+              Chocolate is a family favourite treat. Love the delicious smooth
+              chocolate and the creaminess inside. The wafer is soft but
+              crunchy.
+            </p>
+          </div>
         </div>
 
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
@@ -68,30 +71,33 @@
             width="80px "
             height="80px"
           />
-          <h2 class="reviews-name">Natalia Sus</h2>
-          <p class="reviews-text">
-            The chocolate assortment was delicious. Both dark and milk chocolate
-            pieces were smooth and just right on the sweetness level.
-          </p>
+          <div class="content">
+            <h2 class="reviews-name">Natalia Sus</h2>
+            <p class="reviews-text">
+              The chocolate assortment was delicious. Both dark and milk
+              chocolate pieces were smooth and just right on the sweetness
+              level.
+            </p>
+          </div>
         </div>
-
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </div>
       <div class="swiper-sliderr display-none">
-        <div class="image-wrapper">
+        <div class="image-wrapperr">
           <img
             class="reviews-photo"
             srcset="./img/danilon.png 1x, ./img/danilon@2x.jpg 2x"
-            src="../img/danilon.png"
+            src="./img/danilon.png"
             width="80px "
             height="80px"
           />
-          <h2 class="reviews-name">Danilo Nottingham</h2>
-          <p class="reviews-text">
-            This is delicious. It so rich and flavorful you don’t need to use as
-            many. I love topping an apple with almond butter and these chips for
-            a snack.
-          </p>
+          <div class="content">
+            <h2 class="reviews-name">Danilo Nottingham</h2>
+            <p class="reviews-text">
+              This is delicious. It so rich and flavorful you don’t need to use
+              as many. I love topping an apple with almond butter and these
+              chips for a snack.
+            </p>
+          </div>
         </div>
       </div>
       <div class="swiper-sliderr display-none">
@@ -103,16 +109,16 @@
             width="80px "
             height="80px"
           />
-          <h2 class="reviews-name">Irina Tydnyuk</h2>
-          <p class="reviews-text">
-            This is simply the best chocolate around, and I'm just thrilled to
-            support a local company! Best local chocolate - world class :)
-          </p>
+          <div class="content">
+            <h2 class="reviews-name">Irina Tydnyuk</h2>
+            <p class="reviews-text">
+              This is simply the best chocolate around, and I'm just thrilled to
+              support a local company! Best local chocolate - world class :)
+            </p>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="swiper-pagination"></div>
   </div>
 
   <button type="button" class="js-open-modal button-styles" data-modal="9">
@@ -251,3 +257,6 @@
 
   <div class="overlay js-overlay-modal"></div>
 </section>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../js/slider-swiper.js"></script>
