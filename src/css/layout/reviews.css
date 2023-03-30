@@ -484,6 +484,7 @@
     max-width: 768px;
     margin: auto;
     margin-bottom: 90px;
+    flex-wrap: wrap;
   }
   .swiper-wrapperr .slick-dots {
     position: absolute;
