@@ -28,7 +28,7 @@ const reviewSwiper = new Swiper('.review-swiper', {
     // when window width is >= 1200px
     1200: {
       slidesPerView: 3,
-      spaceBetween: 28,
+      spaceBetween: 20,
     },
   },
 });

@@ -4,6 +4,10 @@
   padding-bottom: 72px;
 }
 
+.review-swiper-pagination {
+  margin-bottom: 50px;
+}
+
 .swiper-wrapperr {
   position: relative;
   margin-bottom: 65px;
@@ -473,7 +477,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 13px;
+  /* gap: 13px; */
 }
 
 /*  Планшет */
@@ -488,7 +492,7 @@
   .swiper-wrapperr {
     display: flex;
     --primary-background-color: #fafafa;
-    gap: 16px;
+    /* gap: 16px; */
     max-width: 768px;
     margin: auto;
     margin-bottom: 90px;
@@ -502,7 +506,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 13px;
+    /* gap: 13px; */
   }
 
   .image-wrapperr {
@@ -511,7 +515,7 @@
   .slick-track {
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    /* gap: 16px; */
   }
   .swiper-sliderr {
     /* display: flex;
@@ -605,12 +609,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 13px;
+    /* gap: 13px; */
   }
   .slick-track {
     display: flex;
     justify-content: space-between;
-    gap: 28px;
+    /* gap: 28px; */
   }
   .swiper-sliderr:nth-child(n + 4) {
     margin-bottom: 0;
@@ -618,7 +622,7 @@
   .swiper-wrapperr {
     justify-content: space-between;
     max-width: 1200px;
-    gap: 28px;
+    /* gap: 28px; */
     margin-bottom: 94px;
   }
   .reviews-container {
