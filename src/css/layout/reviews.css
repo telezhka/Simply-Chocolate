@@ -418,6 +418,14 @@
   transition: 0.3s all;
 }
 /* style popap*/
+.review-swiper {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
 .reviews-swg {
   position: absolute;
   top: 150px;
@@ -484,7 +492,7 @@
     max-width: 768px;
     margin: auto;
     margin-bottom: 90px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
   .swiper-wrapperr .slick-dots {
     position: absolute;
