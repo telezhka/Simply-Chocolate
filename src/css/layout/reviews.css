@@ -4,9 +4,13 @@
   padding-bottom: 72px;
 }
 
+.revmb {
+  margin-bottom: 50px;
+}
+
 .swiper-wrapperr {
   position: relative;
-  margin-bottom: 65px;
+  margin-bottom: 15px;
 }
 
 .header-reviews {
@@ -29,8 +33,6 @@
   letter-spacing: -0.03em;
   color: #111111;
   text-transform: uppercase;
-}
-.image-sliderr {
 }
 .swiper-sliderr {
   width: 100%;
@@ -418,6 +420,14 @@
   transition: 0.3s all;
 }
 /* style popap*/
+.review-swiper {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
 .reviews-swg {
   position: absolute;
   top: 150px;
@@ -465,7 +475,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 13px;
+  /* gap: 13px; */
 }
 
 /*  Планшет */
@@ -480,11 +490,11 @@
   .swiper-wrapperr {
     display: flex;
     --primary-background-color: #fafafa;
-    gap: 16px;
+    /* gap: 16px; */
     max-width: 768px;
     margin: auto;
-    margin-bottom: 90px;
-    flex-wrap: wrap;
+    margin-bottom: 15px;
+    /* flex-wrap: wrap; */
   }
   .swiper-wrapperr .slick-dots {
     position: absolute;
@@ -494,7 +504,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 13px;
+    /* gap: 13px; */
   }
 
   .image-wrapperr {
@@ -503,7 +513,7 @@
   .slick-track {
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    /* gap: 16px; */
   }
   .swiper-sliderr {
     /* display: flex;
@@ -597,12 +607,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 13px;
+    /* gap: 13px; */
   }
   .slick-track {
     display: flex;
     justify-content: space-between;
-    gap: 28px;
+    /* gap: 28px; */
   }
   .swiper-sliderr:nth-child(n + 4) {
     margin-bottom: 0;
@@ -610,16 +620,15 @@
   .swiper-wrapperr {
     justify-content: space-between;
     max-width: 1200px;
-    gap: 28px;
-    margin-bottom: 94px;
+    /* gap: 28px; */
+    margin-bottom: 15px;
   }
   .reviews-container {
     padding-top: 128px;
     padding-bottom: 128px;
   }
 }
-.content {
-}
+
 .swiper-lazy-preloader {
   /* width: 42px; */
   /* height: 42px; */
@@ -637,15 +646,6 @@
   display: none;
 }
 
-/* Слайдер */
-.slick-slider {
-}
-/* Слайдер запущен */
-.slick-slider.slick-initialized {
-}
-/* Слайдер с точками */
-.slick-slider.slick-dotted {
-}
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
@@ -660,22 +660,12 @@
   min-width: 360px;
   flex-basis: calc((100% - 140px) / 6);
 }
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {
-}
-/* Слайд основной */
-.slick-slide.slick-current {
-}
+
 /* Слайд по центру */
 .slick-slide.slick-center {
   text-align: center;
 }
-/* Клонированный слайд */
-.slick-slide.slick-cloned {
-}
-/* Стрелка */
-.slick-arrow {
-}
+
 /* Стрелка влево */
 .slick-arrow.slick-prev {
   font-size: 0;
@@ -683,21 +673,6 @@
 /* Стрелка вправо */
 .slick-arrow.slick-next {
   font-size: 0;
-}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {
-}
-/* Точки (булиты) */
-.slick-dots {
-}
-.slick-dots li {
-}
-
-/* Активная точка */
-.slick-dots li.slick-active {
-}
-/* Элемент точки */
-.slick-dots li button {
 }
 
 .swiper-wrapperr .slick-dots li {
