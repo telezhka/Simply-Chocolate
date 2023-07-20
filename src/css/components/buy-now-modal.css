@@ -283,12 +283,15 @@
   height: 91px;
 }
 @media screen and (min-width: 768px) {
-  .chocolate-card.white-no {
+  .chocolate-card {
     display: block;
+    margin-left: 0;
+    margin-right: 0;
   }
   .list-chocolate-card {
     display: flex;
     gap: 16px;
+    justify-content: center;
   }
   .hero-modal {
     max-width: 609px;
@@ -308,6 +311,8 @@
   }
   .chocolate-card {
     max-width: 160px;
+    margin-left: 0;
+    margin-right: 0;
     flex-basis: calc((100% - 32px) / 3);
   }
   .modal-svg-hero {
