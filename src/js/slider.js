@@ -86,11 +86,11 @@ const buyNowSwiper = new Swiper('.buy-now-swiper', {
     },
     // when window width is >= 768px
     768: {
-      slidesPerView: 2.5,
+      slidesPerView: 3,
     },
     // when window width is >= 1200px
     1200: {
-      slidesPerView: 4,
+      slidesPerView: 3,
     },
   },
 });
