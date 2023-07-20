@@ -65,7 +65,7 @@ const productsSwiper = new Swiper('.products-swiper', {
 });
 
 const buyNowSwiper = new Swiper('.buy-now-swiper', {
-  spaceBetween: 18,
+  // spaceBetween: 160,
   // loop: true,
 
   // autoplay: {
