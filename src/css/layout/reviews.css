@@ -10,7 +10,7 @@
 
 .swiper-wrapperr {
   position: relative;
-  margin-bottom: 65px;
+  margin-bottom: 15px;
 }
 
 .header-reviews {
@@ -493,7 +493,7 @@
     /* gap: 16px; */
     max-width: 768px;
     margin: auto;
-    margin-bottom: 90px;
+    margin-bottom: 15px;
     /* flex-wrap: wrap; */
   }
   .swiper-wrapperr .slick-dots {
@@ -621,7 +621,7 @@
     justify-content: space-between;
     max-width: 1200px;
     /* gap: 28px; */
-    margin-bottom: 94px;
+    margin-bottom: 15px;
   }
   .reviews-container {
     padding-top: 128px;
